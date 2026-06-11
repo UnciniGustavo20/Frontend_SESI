@@ -52,4 +52,24 @@ function executarSistema() {
     }
 
 
-}       
+}     
+
+function mostrarNotificacao(texto) {
+    const notificacao = document.getElementById("notificacao");
+
+    notificacao.innerText = texto;
+    notificacao.classList.add("show");
+
+    setTimeout(() => {
+        notificacao.classList.remove("show");
+    }, 3000);
+
+    if (idade >= 16) {
+        msg.innerText = `Venda autorizada: ${nome}`;
+        msg.style.color = "#00ff88";
+    
+        mostrarNotificacao(`✅ Venda de ${nome} concluída com sucesso!`);
+    
+        let valorFinal = (valor > 500 || cupom) ? valor * 0.85 : valor;
+    }
+}

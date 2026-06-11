@@ -76,3 +76,25 @@ hr {
     border-top: 1px solid #333;
     margin: 20px 0;
 }
+
+.notificacao {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #00ff88;
+    color: #121212;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.4s ease;
+}
+
+.notificacao.show {
+    opacity: 1;
+    visibility: visible;
+}
