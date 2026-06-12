@@ -60,7 +60,8 @@ li {
     color: #ccc;
 }
 
-input, select {
+input,
+select {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
@@ -76,6 +77,8 @@ hr {
     border-top: 1px solid #333;
     margin: 20px 0;
 }
+
+/* ===== NOTIFICAÇÃO ===== */
 
 .notificacao {
     position: fixed;
@@ -97,4 +100,55 @@ hr {
 .notificacao.show {
     opacity: 1;
     visibility: visible;
+}
+
+/* ===== MODAL ===== */
+
+#myModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#myModal .modal-content {
+    background-color: #1e1e1e;
+    color: #ffffff;
+
+    width: 90%;
+    max-width: 450px;
+
+    margin: 10% auto;
+    padding: 25px;
+
+    border-radius: 10px;
+    border: 1px solid #333;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+    text-align: center;
+}
+
+#myModal h2 {
+    color: #00ff88;
+    margin-bottom: 15px;
+}
+
+#myModal p {
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+#myModal .close {
+    color: #ffffff;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myModal .close:hover {
+    color: #00ff88;
 }
