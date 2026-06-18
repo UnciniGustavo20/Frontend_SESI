@@ -5,6 +5,8 @@ const span = document.getElementsByClassName("close")[0];
 // Fecha ao clicar no X
 span.onclick = function () {
     modal.style.display = "none";
+            inputNome.focus();
+
 }
 
 // Fecha ao clicar fora
@@ -12,6 +14,8 @@ window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+            inputNome.focus();
+
 }
 
 // NOTIFICAÇÃO
@@ -44,6 +48,7 @@ function executarSistema() {
     // validação
     if (!nome || isNaN(idade) || isNaN(valor)) {
         alert("Por favor, preencha todos os campos!");
+        inputNome.focus();
         return;
     }
 
