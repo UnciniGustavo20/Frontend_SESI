@@ -13,8 +13,8 @@ span.onclick = function () {
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        inputNome.focus();
     }
-            inputNome.focus();
 
 }
 
@@ -56,7 +56,7 @@ function executarSistema() {
     if (idade >= 16) {
 
         msg.innerText = `Venda autorizada: ${nome}`;
-        msg.style.color = "#00ff88";
+        msg.style.color = "#70d1e9";
 
         let valorFinal = (valor > 500 || cupom) ? valor * 0.85 : valor;
 
@@ -84,7 +84,7 @@ function executarSistema() {
 
         // modal
         textoModal.innerHTML = `
-            <h3>Venda Concluída</h3>
+            <h3>Obrigado pela compra. </h3>
             <p>Cliente: ${nome}</p>
             <p>Valor Final: R$ ${valorFinal.toFixed(2)}</p>
         `;

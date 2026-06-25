@@ -1,5 +1,5 @@
 body {
-    background-color: #121212;
+    background-color: #20242c;
     color: #ffffff;
     font-family: 'Segoe UI', sans-serif;
     display: flex;
@@ -9,36 +9,36 @@ body {
 
 .container {
     width: 400px;
-    background-color: #1e1e1e;
+    background-color: #2f3440;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #333;
+    border: 5px solid #3f5666;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 h1 {
-    color: #00ff88;
+    color: #0099ff;
     text-align: center;
 }
 
 h3 {
-    color: #00d4ff;
-    border-bottom: 1px solid #333;
+    color: #70d1e9;
+    border-bottom: 1px solid #3f5666;
     padding-bottom: 5px;
 }
 
 .card {
-    background: #252525;
+    background: #3f5666;
     padding: 15px;
     border-radius: 5px;
-    border-left: 5px solid #00ff88;
+    border-left: 5px solid #70d1e9;
 }
 
 button {
     width: 100%;
     padding: 15px;
     margin-top: 20px;
-    background-color: #00ff88;
+    background-color: #0099ff;
     border: none;
     border-radius: 5px;
     font-weight: bold;
@@ -47,7 +47,7 @@ button {
 }
 
 button:hover {
-    background-color: #00cc6e;
+    background-color: #0099ff;
 }
 
 ul {
@@ -66,8 +66,8 @@ select {
     padding: 10px;
     margin: 8px 0;
     border-radius: 5px;
-    border: 1px solid #444;
-    background-color: #252525;
+    border: 1px solid #3f5666;
+    background-color: #2f3440;
     color: white;
     box-sizing: border-box;
 }
@@ -84,12 +84,12 @@ hr {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #00ff88;
-    color: #121212;
+    background-color: #0099ff;
+    color: #2f3440;
     padding: 15px 25px;
     border-radius: 8px;
     font-weight: bold;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 15px #2f3440;
 
     opacity: 0;
     visibility: hidden;
@@ -109,11 +109,11 @@ hr {
     position: fixed;
     z-index: 9999;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: #242831;
 }
 
 #myModal .modal-content {
-    background-color: #1e1e1e;
+    background-color: #2f3440;
     color: #ffffff;
 
     width: 90%;
@@ -123,15 +123,15 @@ hr {
     padding: 25px;
 
     border-radius: 10px;
-    border: 1px solid #333;
+    border: 1px solid #2f3440;
 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px #242831;
 
     text-align: center;
 }
 
 #myModal h2 {
-    color: #00ff88;
+    color: #0099ff;
     margin-bottom: 15px;
 }
 
@@ -150,5 +150,5 @@ hr {
 }
 
 #myModal .close:hover {
-    color: #00ff88;
+    color: #0099ff;
 }
